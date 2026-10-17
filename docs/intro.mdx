@@ -1,0 +1,35 @@
+---
+title: Documentation that ships with the code
+slug: /
+description: A working Docusaurus portfolio lab for developer documentation, CI checks and safe static deployment.
+---
+
+<div className="lab-hero">
+<p className="lab-kicker">A docs-as-code portfolio · v1.0</p>
+<p className="lab-lead">From a first API call to a verified release. Learn a small system, document its behavior, and keep the site honest as the code changes.</p>
+</div>
+
+**Signal Harbor is a fictional incident intake service.** Its local API is real,
+small enough to inspect, and tested against the behavior documented here. The
+documentation site is built with Docusaurus and deployed through GitHub Actions.
+
+<div className="lab-grid">
+<section className="lab-card"><p className="lab-kicker">01 / Start here</p><h3>Send your first incident</h3><p>Run the local service, create a synthetic incident, then see how retries are deduplicated.</p><a href="./tutorials/first-incident/">Follow the tutorial →</a></section>
+<section className="lab-card"><p className="lab-kicker">02 / Understand the contract</p><h3>Predict every response</h3><p>Request examples, status codes, validation rules and the limits of in-memory storage.</p><a href="./reference/api/">Explore the API →</a></section>
+<section className="lab-card"><p className="lab-kicker">03 / Own the release</p><h3>Build, publish, recover</h3><p>Trace a change through tests, MDX compilation, route checks and a Pages deployment.</p><a href="./guides/deploy/">Read the deployment guide →</a></section>
+<section className="lab-card"><p className="lab-kicker">04 / Inspect the evidence</p><h3>See what was built</h3><p>A clear account of the implementation, assistance used, validation and remaining learning.</p><a href="./explanation/project-evidence/">Read the project notes →</a></section>
+</div>
+
+## A small, observable delivery loop
+
+<p className="lab-flow">Markdown / MDX → review → API tests → static build → route checks → Pages</p>
+
+This project separates a **tutorial**, task-focused **how-to guides**, an **API
+reference**, and explanations of **design decisions**. Start with the tutorial;
+use the reference when you need an exact answer.
+
+:::note Portfolio scope
+Created in October 2026 with AI assistance. This is a demonstrable learning project,
+not an employer deployment, customer service or claim of prior professional
+Docusaurus experience. No credentials, candidate records or real incidents belong here.
+:::

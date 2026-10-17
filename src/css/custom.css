@@ -1,0 +1,38 @@
+:root {
+  --ifm-color-primary: #14635b;
+  --ifm-color-primary-dark: #12594f;
+  --ifm-color-primary-darker: #11544b;
+  --ifm-color-primary-darkest: #0e453e;
+  --ifm-color-primary-light: #166d64;
+  --ifm-color-primary-lighter: #177269;
+  --ifm-color-primary-lightest: #1a8177;
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-size-base: 17px;
+  --ifm-line-height-base: 1.75;
+  --ifm-background-color: #fbfaf6;
+  --ifm-heading-color: #152e32;
+  --ifm-navbar-background-color: #fbfaf6;
+  --ifm-code-font-size: 88%;
+}
+[data-theme='dark'] {
+  --ifm-color-primary: #75d5bc;
+  --ifm-background-color: #132126;
+  --ifm-heading-color: #eff7f2;
+  --ifm-navbar-background-color: #132126;
+}
+.navbar {border-bottom: 1px solid #879e9538; box-shadow: none;}
+.navbar__title {font-size: .8rem; letter-spacing: .13em;}
+.menu__link {font-size: .88rem;}
+.markdown h1 {font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.12; letter-spacing: -.045em;}
+.markdown h2 {letter-spacing: -.025em;}
+.lab-hero {border-top: 5px solid var(--ifm-color-primary); padding: 1.7rem 0 1rem;}
+.lab-kicker {font: 700 .75rem ui-monospace, monospace; letter-spacing: .15em; text-transform: uppercase; color: var(--ifm-color-primary);}
+.lab-lead {font-size: 1.2rem; max-width: 42rem; opacity: .85;}
+.lab-grid {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.8rem 0;}
+.lab-card {border: 1px solid #879e955c; border-radius: 8px; padding: 1.3rem; background: #879e9509;}
+.lab-card h3 {margin: .35rem 0 .6rem; font-size: 1.2rem;}
+.lab-card p {margin: 0; font-size: .94rem;}
+.lab-flow {font: 500 .85rem ui-monospace, monospace; border-left: 3px solid var(--ifm-color-primary); padding: .75rem 1rem; background: #879e9512;}
+.footer {margin-top: 2rem;}
+@media(max-width: 650px) {.lab-grid {grid-template-columns: 1fr;}}
