@@ -13,7 +13,8 @@ Local environment: Linux, Node 24.15.0, npm 11.12.1, Docusaurus 3.10.2.
 | Restore original document and rebuild | Passed; no deliberate broken link remains |
 | Development server | Started on loopback port 3107; client compilation succeeded after restoration; HTTP request succeeded |
 | Dependency audit after overrides | Zero critical/moderate/low; 28 inherited high flags from one remaining braces advisory root; see SECURITY.md |
-| GitHub Actions / live Pages | Pending first source push; check Actions for current remote outcome |
+| GitHub Actions build / Pages deployment | Both passed in [run 39036792928](https://github.com/Abwonder/docs-as-code-lab/actions/runs/39036792928) for initial commit 663ce86 |
+| Live browser | Homepage rendered; API link navigated correctly; nested API URL reloaded directly without a 404 |
 
 The initial audit reported 45 inherited flags. Explicit patched overrides removed
 the tinypool, serialization, selector-parser and uuid advisory roots; braces has
@@ -21,8 +22,9 @@ no published patch at review. These are build tools, but the remaining risk is
 documented rather than suppressed or described as a clean audit.
 
 The development page uses client rendering; the production build supplies static
-HTML. Final browser and deployment evidence will be recorded after the remote
-workflow runs. Local test results do not prove a successful Pages deployment.
+HTML. The live homepage was visually checked and its screenshot is stored at
+`assets/site-preview.png`. The deployment took place after the local checks; it is
+supported by the separate remote workflow evidence above.
 
 These checks were performed with Codex assistance. The owner's independent
 release-drill practice is not recorded as completed.
