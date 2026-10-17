@@ -8,6 +8,11 @@ pipeline. Created October 2026. Signal Harbor is fictional; all API data is synt
 - **Source:** https://github.com/Abwonder/docs-as-code-lab
 - **Build/deployment evidence:** [GitHub Actions](https://github.com/Abwonder/docs-as-code-lab/actions)
 
+![Published Signal Harbor documentation site](assets/site-preview.png)
+
+The first [build and deployment](https://github.com/Abwonder/docs-as-code-lab/actions/runs/39036792928)
+passed, and the live homepage and nested API page were checked in a browser.
+
 ## What was built
 
 The site documents a small Node.js incident intake API. A reader can run it locally,
